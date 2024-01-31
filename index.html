@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/menu.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header-navigation">
+      <ul>
+        <li class="menu-burguer"><img src="./src/images/icon-menu.svg" alt="Menu"></li>
+          <div class="menu-responsivo">
+              <img src="./src/images/icon-close.svg" alt="fechar menu icone" class="closeMenu">
+                <ul class="menu-list">
+                  <li class="menu-item"><a href="#">Collections</a></li>
+                  <li class="menu-item"><a href="#">Men</a></li>
+                  <li class="menu-item"><a href="#">Women</a></li>
+                  <li class="menu-item"><a href="#">About</a></li>
+                  <li class="menu-item"><a href="#">Contact</a></li>
+                </ul>
+          </div>
+        <li class="logo"><a href="#" class="logo"><img src="./src/images/logo.svg" alt="Logo"></a></li>
+        <div class="interactive-items">
+          <li class="header-item"><a href="#">Collections</a></li>
+          <li class="header-item"><a href="#">Men</a></li>
+          <li class="header-item"><a href="#">Women</a></li>
+          <li class="header-item"><a href="#">About</a></li>
+          <li class="header-item"><a href="#">Contact</a></li>
+        </div>
+      </ul>
+      <ul>
+        <li class="header-item cart" id="cartBtn">
+          <img src="./src/images/icon-cart.svg" alt="carrinho">
+          <div class="cart-notification">
+            <p>0</p>
+          </div>
+        </li>
+        <div class="cart-active">
+          <h3>Cart</h3>
+          <div class="products-on-cart">
+            <p>Your cart is empty.</p>
+          </div>
+        </div>
+        <li class="header-item profile"><img src="./src/images/image-avatar.png" alt="Foto de perfil"></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="product">
+      <div class="product-images">
+        <div class="arrows">
+          <div class="arrow left"><img src="./src/images/icon-previous.svg" alt="Imagem seta esquerda" class="arrowleft"></div>
+          <div class="arrow right"><img src="./src/images/icon-next.svg" alt="Imagem seta direita" class="arrowright"></div>
+        </div>
+        <div class="main-image-div-normal"><img src="./src/images/image-product-1.jpg" alt="foto principal do produto" class="imagem-principal"></div>
+
+        <div class="sub-images">
+          <div class="sub-image featured-item ligado allImage">
+          <img src="./src/images/image-product-1.jpg" alt="Foto do produto" class="normal-image"></div>
+          <div class="sub-image allImage"><img src="./src/images/image-product-2.jpg" alt="Foto do produto" class="normal-image"></div>
+          <div class="sub-image allImage"><img src="./src/images/image-product-3.jpg" alt="Foto do produto" class="normal-image"></div>
+          <div class="sub-image allImage"><img src="./src/images/image-product-4.jpg" alt="Foto do produto" class="normal-image"></div>
+        </div>
+      </div>
+      <div class="product-info">
+        <h3 class="brand">SNEAKER COMPANY</h3>
+        <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+        <p class="product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+        <div class="product-price">
+          <h2>$125.00 <span class="discount">50%</span></h2>
+          <p>$250.00</p>
+        </div>
+        <div class="product-cart">
+          <div class="add-or-remove-to-cart">
+            <div 
+            class="cart-functions" id="removeOneProductBtn" 
+            alt="Remover">
+              <img src="./src/images/icon-minus.svg">
+            </div>
+            <p id="productQuantityToAdd">0</p>
+            <div 
+            class="cart-functions"             id="addOneProductBtn" 
+            alt="Adicionar">
+              <img src="./src/images/icon-plus.svg">
+            </div>
+          </div>
+          <button id="addToCart"><img src="./src/images/icon-cart-white.svg" alt="Icone carrinho branco">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="lightbox" >
+    <div class="closeLightbox">
+      <img src="./src/images/icon-close-orange.svg" alt="fechar lightbox" id="closeLightboxImg">
+    </div>
+    <div class="main-image-div">
+        <img src="./src/images/image-product-1.jpg" alt="imagem principal" class="main-image lightbox-img">
+    </div>
+
+    <div class="sub-images">
+        <div class="sub-image-div featured-item-lightbox allImage">
+        <img src="./src/images/image-product-1.jpg" alt="Foto do produto" class="sub-image-lightbox"></div>
+        <div class="sub-image-div allImage"><img src="./src/images/image-product-2.jpg" alt="Foto do produto" class="sub-image-lightbox"></div>
+        <div class="sub-image-div allImage"><img src="./src/images/image-product-3.jpg" alt="Foto do produto" class="sub-image-lightbox"></div>
+        <div class="sub-image-div allImage"><img src="./src/images/image-product-4.jpg" alt="Foto do produto" class="sub-image-lightbox"></div>
+      </div>
+  </div>
+</body>
+
+  <script src="./src/scripts/index.js"></script>
+</html>
